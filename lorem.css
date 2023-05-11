@@ -39,16 +39,46 @@ h1 {
 .pseudo::before{
     content:'"';
     font-weight: 900px;
-    font-size: 100px;
+    font-size: 70px;
     color: red;
     position: absolute;
+    margin: -27px;
 }
 .pseudo::after{
     font-weight: 900px;
     content:'"' ;
     transform: rotate(180deg);
-    font-size: 100px ;
+    font-size: 70px ;
     color: red;
     position: absolute;
+    margin: -50px;
+    right: 22px;
 }
 
+.icons-custom {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;   
+    flex-direction: column;
+    border-bottom: 3px solid darkred; 
+    width: 16%;
+    position: relative;
+}
+
+.icons-custom1 {
+   width: 100px;
+   font-size: 40px;
+   padding-bottom: 10px;
+}
+
+.icons-custom::before {
+    content: '';
+    border-radius: 50%;
+    border: 3px solid darkred;
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    top: 83px;
+    background-color: white;
+}
