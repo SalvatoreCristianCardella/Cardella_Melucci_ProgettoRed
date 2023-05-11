@@ -10,21 +10,25 @@
     color: black;   
 }
 .div-header1{
-    margin-top: 180px;
+     margin-top: 4rem;
      background-color: #FFDEE9; 
     background-image: linear-gradient(rgba(255,255,255,1),rgba(255,255,255,0)),url(./media/switzerland-862870_1920.jpg);
     background-position: center;
-
 }
 h1 {
-    letter-spacing: 40px;
-    font-weight: large;
-    font-size: xx-large;
-    color: red;
-
+    letter-spacing: 5rem;
+    font-weight: 10rem;
+    font-size: 4rem;
+    color: darkred;
+}
+@media screen and (max-width: 992px){
+    h1 {
+        letter-spacing: 0px;
+    }
+    
 }
 .div-title{
-    margin-top: 250px;  
+    margin-top: 15rem;  
 }
 .color-custom{
     background-color: #ececec;
@@ -41,10 +45,10 @@ h1 {
 .pseudo::before{
     content:'"';
     font-weight: 900px;
-    font-size: 70px;
+    font-size: 4.3rem;
     color: darkred;
     position: absolute;
-    margin: -27px;
+    margin: -1.5rem;
 }
 .pseudo::after{
     font-weight: 900px;
@@ -59,7 +63,7 @@ h1 {
 
 .icons-custom {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     text-align: center;   
     flex-direction: column;
@@ -68,22 +72,20 @@ h1 {
     position: relative;
 }
 
-.icons-custom1 {
-   width: 100px;
+.icons-custom1 {;
    font-size: 40px;
-   padding-bottom: 10px;
 }
 
-.icons-custom::before {
-    content: '';
-    border-radius: 50%;
+.circle-custom {
+    height: 25px;
+    width: 25px;
     border: 3px solid darkred;
     position: absolute;
-    width: 17px;
-    height: 17px;
-    top: 83px;
     background-color: white;
+    border-radius: 50%;
+    top: 70px;
 }
+
 .button-5 {
     align-items: center;
     background-color: darkred;
@@ -107,14 +109,20 @@ h1 {
     touch-action: manipulation;
     vertical-align: baseline;
     width: auto;
-  }
-  .button-5:hover{
+}
+.button-5:hover{
     background-color: red;
     color: black;
-  }
+}
+@media  screen and (max-width: 992) {
+    .button-5 {
+        padding-left: 0rem;
+    }
+}
+
   .darkred-custom {
     color: darkred;
-  }
+ }
   .border-custom{
     border-left: 3px solid darkred;
     padding-left: 20px;
